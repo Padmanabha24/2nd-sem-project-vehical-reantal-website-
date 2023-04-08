@@ -1,0 +1,333 @@
+<!--doctype-->
+<html>
+
+<head>
+  <title>home page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+    }
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+      margin: 0%;
+      padding: 0%;
+    }
+    nav {
+      height: 40px;
+      background-color: rgb(242, 238, 238);
+      display: flex;
+      align-items: center;
+      border-radius: 5px;
+      width: 1555px;
+      position: relative;
+      top: 0px;
+      left: -12px;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      padding: 0px 5px 0px 10px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      padding: 0px 5px 0px 14px;
+      color: black;
+      font-size: 18px;
+      font-weight: 500px;
+    }
+    nav ul li a:hover {
+      background-color: white;
+      transition: 0.3s;
+      border-radius: 3px;
+      box-shadow: 2px 2px;
+    }
+    #search
+    /* styling for search icon */
+      {
+      font-weight: 500;
+      position: relative;
+      left: 1180px;
+      color: black;
+    }
+    .logo
+    /*styling for logo*/
+      {
+      position: relative;
+      left: 400px;
+      font-size: 25px;
+      align-items: center;
+      font-family: Sofia;
+    }
+    .material-icons:hover
+    /*styling for search icon*/
+      {
+      background-color: rgb(221, 204, 204);
+      transition: 0.3s;
+      border-radius: 3px;
+      box-shadow: 2px 2px;
+    }
+    body {
+      background-color: grey;
+    }
+    .color
+    /*styling for header*/
+      {
+      height: 1090px;
+      background-color: rgb(255, 255, 255);
+    }
+    .block
+    /*styling for heading of "please enter the details"*/
+      {
+      margin-top: 0px;
+      background-color: rgb(124, 108, 108);
+      border-top: 3px solid rgb(40, 154, 199);
+      height: 350px;
+      padding-left: 580px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+.mycar img
+/*styling for car image*/
+      {
+      border: 3px solid black;
+      width: 380px;
+      height: 290px;
+      background-color: grey;
+      border-radius: 10px;
+      position: relative;
+      left: 1000px;
+      top: -630px;
+      Box-shadow: 0px 12px 32px 0px rgb(66, 65, 65);
+    }
+ .whole
+ /*styling for whole bike and car  image*/
+      {
+      margin-top: -10px;
+    }
+    .veh
+    /*styling for the text "vehicle"*/
+      {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: black;
+      margin-left: 660px;
+      margin-top: 20px;
+      border: 1px solid black;
+      width: 130px;
+      background-color: white;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 14PX;
+    }
+    .form {
+      /*styling for whole form of pickup and return details*/
+      position: relative;
+      top: 50px;
+      left: 350px;
+    }
+    .mybutton
+    /*styling for ok button*/
+      {
+      margin-left: 1000;
+      margin-top: 60px;
+      overflow: auto;
+    }
+    #bike {
+      margin-right: 1000px;
+      margin-top: 30px;
+      margin-left: 20px;
+    }
+    .social-media
+    /*styling for join-us text*/
+      {
+      border: 1px solid white;
+      position: relative;
+      top: 2500px;
+      background-color: white;
+      margin-top: 2500px;
+      font-size: 15px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      height: 45px;
+      border-top: 1px solid black;
+      font-size: 10px;
+    }
+    #nocar {
+      position: relative;
+      right: -50px;
+      top: 150px;
+      color: gray;
+    }
+    .text
+    /* styling "join us" text*/
+      {
+      border: 1px solid white;
+      height: 100px;
+      background-color: white;
+      margin-top: -200px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .icons
+    /*styling for icons*/
+      {
+      margin-left: 140px;
+      margin-top: -63px
+    }
+    .icons i
+    /*seperate the icons*/
+      {
+      padding: 0px 5px 0px 5px;
+      color: black;
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+   
+    }
+ .box {
+      transition: 0.3s;
+      padding: 20px;
+      margin: 0px 40px 0px 10px;
+      transition: 0.3s;
+      border: 3px solid black;
+      border-radius: 6px;
+      width: 180px;
+      height: 150px;
+      background-color: white;
+      position: relative;
+      top: -300px;
+      Box-shadow: 0px 12px 32px 0px rgb(66, 65, 65);
+    }
+    .box img {
+      display: block;
+      width: 140px;
+      height: 100px;
+    }
+    .box:hover {
+      transform: scale(1.2);
+      z-index: 0.3;
+    }
+    .text1 {
+      position: relative;
+      top: -550px;
+      left: 82px;
+    }
+    .whole {    
+      margin-top: 50px;
+    }
+    .last {
+      background-color: white;
+      margin-top: px;
+      height: 30px;
+    } 
+   
+  </style>
+</head>
+<body>
+  <header class="color">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">about us</a></li>
+        <li><a href="#">services</a></li>
+        <li><a href="#">blog</a></li>
+      </ul>
+      <a href="#"><i class="material-icons" id="search">search</a></i>
+      <h3 class="logo">Car rent</h3>
+    </nav>
+    <div class="block">
+      <img src="1.jpg" width="1650px" height="350px" style="position:relative;right:670px">
+    </div>
+    <div class="form">
+      <h1 style="font-size: 15px;position: relative;top: 17px; color: white;">pickup date / time</h1>
+      <h1 style="font-size: 15px;position: relative;left:193px;color: white; ">return date / time</h1>
+      <input type="date" id="pickup date" name="pickup date">
+      <input type="time" id="appt" name="appt">
+      <input type="date" id="pickup date" name="pickup date">
+      <input type="time" id="appt" name="appt">
+      <input list="pickup-location" placeholder="pickup location">
+      <datalist id="pickup-location">
+        <option value="Gulbarga">
+        <option value="Bengaluru">
+        <option value="Mumbai">
+        <option value="Hydrabad">
+        <option value="Hubli">
+      </datalist>
+      <input list="return-location" placeholder="return location">
+      <datalist id="return-location">
+        <option value="Gulbarga">
+        <option value="Bengaluru">
+        <option value="Mumbai">
+        <option value="Hydrabad">
+        <option value="Hubli">
+      </datalist>
+    </div>
+    <div class="mybutton">
+      <input type="button" onclick="alert('Details collected successfully')" value="OK">
+    </div>
+  </header>
+  <div class="whole">    
+    <h1
+      style="position: relative;bottom: 630px;left:20px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+      choose your ride</h1>
+    <div class="mycar">
+      <div class="mycar2">
+        <img src="car.jpg" style="width: 360px; position:relative;left: 10px;top:-605px;">
+        <img src="nexon.jpg" style="width:360px;position:relative;left:410px;top:-605px;">
+        <img src="OIP.jpg" style="width: 360px; position:relative;left: -340px;top:-605px;">
+        <img src="tata.jpg" style="width: 360px; position:relative;left: 60px;top:-605px;">
+      </div>
+    </div>
+  </div>
+  <div class="text">
+    <h1 style="margin-top: 27px;">join us:</h1>
+  </div>
+  <div class="icons">
+    <a href="#"><i class="fa fa-instagram" style="font-size:30px;"></i></a>
+    <a href="#"><i class="fa fa-facebook" style="font-size:30px;"></i></a>
+    <a href="#"><i class="fa fa-youtube-square" style="font-size:30px;"></i></a>
+    <a href="#"><i class="fa fa-twitter" style="font-size:30px;"></i></a>
+  </div>
+  <div class="suggusetion">
+    <p style="margin:-25px 0px 0px 700px ;">Email us at :anySuggestion@gmail.com</p>
+  </div>
+  <div class="suggusetion">
+    <p style="margin:-20px 0px 0px 1300px;">SMS number :+91 6523799370</p>
+  </div>
+  <div class="container">
+    <div class="box">
+      <img src="tata3.jpg" height="100px;width=100px;">
+    </div>
+    <div class="box">
+      <img src="mahindra.jpg" height="100px;width=100px;">
+    </div>
+    <div class="box">
+      <img src="jaguar.jpg" height="100px;width=100px;">
+    </div>
+    <div class="box">
+      <img src="benz.jpg" height="100px;width=100px;">
+    </div>
+    <div class="box">
+      <img src="mitsu.jpg" height="100px;width=100px;">
+    </div>
+    <div class="box">
+      <img src="volvo.jpg" height="100px;width=100px;">
+    </div>
+  </div>
+  <div class="text1">
+    <h1>Popular car brands</h1>
+  </div>
+ 
+</body>
+</html>
